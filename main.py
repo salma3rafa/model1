@@ -14,7 +14,7 @@ app=Flask(__name__)
 model = pickle.load(open('best_rf_model.pkl', 'rb'))
 @app.route('/')
 def home():
-    return "Depression Prediction Model API"
+    return "Mental illness Prediction Model API"
 
 @app.route('/predict', methods=['POST'])
 def predict():
